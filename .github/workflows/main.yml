@@ -31,7 +31,6 @@ jobs:
                 cd /var/www/vhosts/igerent.com/dev-d8
                 ls
                 git branch
-                git log
                 export PATH=/opt/plesk/php/7.1/bin:$PATH;
                 vendor/drush/drush/drush cr
 
