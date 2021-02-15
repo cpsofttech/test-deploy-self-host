@@ -23,9 +23,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: appleboy/ssh-action@master
         with:
-          host: 188.95.114.223
-          username: root
-          password: am6VFzcu
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          script: |
+                whoami
+                ls -al
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
