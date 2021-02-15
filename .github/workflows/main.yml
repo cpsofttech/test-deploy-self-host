@@ -34,6 +34,3 @@ jobs:
                 export PATH=/opt/plesk/php/7.1/bin:$PATH;
                 vendor/drush/drush/drush cr
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: ls
