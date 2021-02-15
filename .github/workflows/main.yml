@@ -33,6 +33,7 @@ jobs:
       - uses: appleboy/ssh-action@v0.1.4
         with:
           host: 188.95.114.223
+          username: root
           password: am6VFzcu
 
       # Runs a single command using the runners shell
