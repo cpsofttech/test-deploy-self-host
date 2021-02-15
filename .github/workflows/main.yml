@@ -30,6 +30,8 @@ jobs:
                 whoami
                 cd /var/www/vhosts/igerent.com/dev-d8
                 ls
+                git branch
+                git log
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
