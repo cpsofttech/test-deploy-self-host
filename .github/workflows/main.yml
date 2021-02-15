@@ -28,7 +28,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           script: |
                 whoami
-                ls -al
+                cd /var/www/vhosts/igerent.com/dev-d8
+                ls
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
